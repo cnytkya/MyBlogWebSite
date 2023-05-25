@@ -27,16 +27,36 @@ namespace DataAccessLayer.Repositories
             b.SaveChanges();
         }
 
+        public void Delete(Blog item)
+        {
+            throw new NotImplementedException();
+        }
+
         public Blog GetById(int id)
         {
             using var b = new AppDbContext();
             return b.Blogs.Find(id);
         }
 
+        public List<Blog> GetListAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Insert(Blog item)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Blog> ListAllBlog()
         {
             using var b = new AppDbContext();
             return b.Blogs.ToList();
+        }
+
+        public void Update(Blog item)
+        {
+            throw new NotImplementedException();
         }
 
         public void UpdateBlog(Blog blog)

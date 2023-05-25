@@ -24,14 +24,34 @@ namespace DataAccessLayer.Repositories
             c.SaveChanges();
         }
 
+        public void Delete(Category item)
+        {
+            throw new NotImplementedException();
+        }
+
         public Category GetById(int id)
         {
             return c.Categories.Find(id);
         }
 
+        public List<Category> GetListAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Insert(Category item)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Category> ListAllCategory()
         {
             return c.Categories.ToList();
+        }
+
+        public void Update(Category item)
+        {
+            throw new NotImplementedException();
         }
 
         public void UpdateCategory(Category category)
